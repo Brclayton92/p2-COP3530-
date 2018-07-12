@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Bubble_Sort.h"
 #include "Quick_Sort.h"
+#include "Selection_Sort.h"
 #include <fstream>
 using namespace std;
 int main() {
@@ -12,7 +13,7 @@ int main() {
     int tempInt = 0;
 
     /*
-     * write ints in file to array begin
+     * read ints from file to array begin
      */
 
     ifstream infile(inputFileName, ios::in); // inputFile.text must be located in "C:\Users\Brock\CLionProjects\projectName\cmake-build-debug"
@@ -31,14 +32,17 @@ int main() {
     }
 
     /*
-     * write ints in file to array end
+     * read ints from file to array end
      */
 
+
     //bubbleSort(arr, n);
-    quickSort(arr, 0, n - 1);
+    //quickSort(arr, 0, n - 1);
+    //selectionSort(arr, n);
 
 
-    //prints sorted array to file "sorted.txt"
+
+    //prints sorted array to file: "sorted.txt"
     int size = n;
     ofstream myfile;
     string sortedFileName = "sorted ";

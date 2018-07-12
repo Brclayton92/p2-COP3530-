@@ -3,4 +3,4 @@ project(p2)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(p2 main.cpp Bubble_Sort.cpp Bubble_Sort.h Quick_Sort.cpp Quick_Sort.h)
+add_executable(p2 main.cpp Bubble_Sort.cpp Bubble_Sort.h Quick_Sort.cpp Quick_Sort.h Slection_Sort.cpp Selection_Sort.h)
