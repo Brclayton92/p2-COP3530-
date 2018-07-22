@@ -10,7 +10,7 @@ int main() {
     for (int i = 0 ; i < 6; i++) {
         int *arr = new int[50000];
         int n = 0;
-        string inputFileName = "SA_input_file_ascending_50000";
+        string inputFileName = "SA_input_file_random_50000";
         inputFileName += ".txt";
         int tempInt = 0;
 
@@ -37,11 +37,12 @@ int main() {
          */
 
 
+
         auto start = std::chrono::high_resolution_clock::now();
 
         //bubbleSort(arr, n);
-        quickSort(arr, 0, n - 1);
         //selectionSort(arr, n);
+        quickSortIterative(arr, 0, n - 1); // FIXME
 
         auto finish = std::chrono::high_resolution_clock::now();
 

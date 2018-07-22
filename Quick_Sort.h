@@ -8,6 +8,6 @@
 
 int partition (int arr[], int low, int high);
 
-void quickSort(int arr[], int low, int high);
+void quickSortIterative(int arr[], int low, int high);
 
 #endif //P2_QUICK_SORT_H
